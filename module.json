@@ -1,0 +1,18 @@
+{
+    "disableAutoUpdate": false,
+	"name": "Auto Bank",
+    "author": "TerableMods",
+	"description": "Auto deposits items into the Bank",
+    "options": {
+        "niceName": "Auto Bank",
+        "guiName": "Auto Bank",
+        "loadOn": "versioncheck",
+        "reloadable": true,
+        "settingsVersion": 1,
+        "settingsFile": "config.json",
+        "settingsMigrator": "settings_migrator.js",
+        "settingsAutosaveOnClose": true
+    },
+    "servers": ["https://raw.githubusercontent.com/TerableMods/Auto-Bank/master/"],
+	"supportUrl": "https://github.com/TerableMods/Auto-Bank/issues"
+}
