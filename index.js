@@ -133,7 +133,7 @@ module.exports = function AutoBank(mod) {
           if (args.length == 1) {
             if (checkDisabled()) return;
             blacklistMode = blacklistMode ? BlacklistModes.NONE : BlacklistModes.ADD;
-            msg(`<font color="#FFFF00">Next item you deposit or withdraw, will be</font> <font color="#FFFF00">added</font> <font color="#FFFF00">from the Blacklist</font>`);
+            msg(`Next item you deposit or withdraw, will be <font color="#FFFF00">added</font> to the Blacklist`);
           } else if (args.length == 2 && isNormalInteger(args[1])) {
             msg(`Item: <font color="#FF8000">${args[1]}</font> has been <font color="#FFFF00">added</font> to the Blacklist`);
             blacklist.add(args[1]);
@@ -147,7 +147,7 @@ module.exports = function AutoBank(mod) {
           if (args.length == 1) {
             if (checkDisabled()) return;
             blacklistMode = blacklistMode ? BlacklistModes.NONE : BlacklistModes.REMOVE;
-            msg(`<font color="#FFFF00">Next item you deposit or withdraw, will be</font> <font color="#FF0000">removed</font> <font color="#FFFF00">from the Blacklist</font>`);
+            msg(`Next item you deposit or withdraw, will be <font color="#FF0000">removed</font> from the Blacklist`);
           } else if (args.length == 2 && isNormalInteger(args[1])) {
             msg(`Item: <font color="#FF8000">${args[1]}</font> has been <font color="#FF0000">removed</font> from the Blacklist`);
             blacklist.add(args[1]);
@@ -160,8 +160,8 @@ module.exports = function AutoBank(mod) {
           if (checkDisabled()) return;
           blacklistMode = blacklistMode ? BlacklistModes.NONE : BlacklistModes.ANY;
           if (blacklistMode) {
-            msg('<font color="#FFFF00">Deposit an item now to be</font> <font color="#FFFF00">added</font> <font color="#FFFF00">to the Blacklist</font>');
-			msg('<font color="#FFFF00">Withdraw an item now to be</font> <font color="#FF0000">removed</font> <font color="#FFFF00">from the Blacklist</font>');
+            msg('Deposit an item now to be <font color="#FFFF00">added</font> to the Blacklist');
+			msg('Withdraw an item now to be <font color="#FF0000">removed</font> from the Blacklist');
             msg('Disable Blacklist mode using: <font color="#00FFFF">ab bl mode</font>');
           } else {
             msg('Blacklist mode: <font color="#FF0000">Disabled</font>');

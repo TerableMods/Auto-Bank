@@ -16,42 +16,45 @@
 
 ## Commands:
 
-_Open your Bank window **before** using the commands below_
-
 - **ab** or **autobank** or **bank**
   - to begin auto depositing items to the bank (Default All Tabs)
-
+  - *(Your Bank window must be open before using this command)*
+  
 - **ab mode**
-  - to toggle depositing modes Single Tab/All Tabs (Default All Tabs)
+  - to toggle the default depositing mode to Single Tab or All Tabs (Default All Tabs)
 
 - **ab tab**
-  - to deposit items in the current bank tab only (Single Tab)
+  - to begin depositing items in the currently opened bank tab only (Single Tab)
+  - *(Your Bank window must be open before using this command)*
 
 - **ab all**
-  - to deposit items in all bank tabs (All Tabs)
+  - to begin depositing items in all bank tabs (All Tabs)
+  - *(Your Bank window must be open before using this command)*
 
 - **ab human**
   - to toggle Human-like delays ON/OFF (Default OFF)
 
-- **ab bl add**
-  - deposit or withdraw a single item to be added to the Blacklist
+- **ab bl a**
+  - deposit or withdraw a single item to add it to the Blacklist
 
-- **ab bl add [itemID]**
+- **ab bl a [itemID]**
   - enter the ID number of the item you want added to the Blacklist
+  - Example: **ab bl a 6552** would add itemID 6552 to the blacklist ([Prime Recovery Potable](https://teralore.com/us/item/6552/))
 
-- **ab bl remove**
+- **ab bl r**
   - deposit or withdraw a single item to be removed from the Blacklist
 
-- **ab bl remove [itemID]**
+- **ab bl r [itemID]**
   - enter the ID number of the item you want removed from the Blacklist
+  - Example: **ab bl r 6552** would remove item 6552 from the blacklist ([Prime Recovery Potable](https://teralore.com/us/item/6552/)) 
 
 - **ab bl clear**
   - to clear all items from the Blacklist
 
 - **ab bl mode**
-  - to toggle Blacklisting mode ON/OFF
-  - when *bl mode* is active: all items *withdrawn* from the bank, are **added** to the Blacklist
-  - when *bl mode* is active: all items *deposited* in the bank, will be **removed** from the Blacklist
+  - to toggle Blacklist mode ON/OFF
+  - when Blacklist mode is active: all items *withdrawn* from the bank, are **added** to the Blacklist
+  - when Blacklist mode is active: all items *deposited* in the bank, will be **removed** from the Blacklist
 
 ---
 
@@ -60,6 +63,15 @@ _Open your Bank window **before** using the commands below_
 - Items will **only** be auto deposited from your inventory, if the same item already exists in your bank
 - Items in your Blacklist will never be auto deposited
 - Items in your *Pocket Tab* section will be ignored
+- Items in your inventory using more than one space (multiple stacks), only 1 stack will be deposited at a time
+  - (you can run the command again to deposit the next stack)
+
+---
+
+### Issues:
+
+- While blacklisting (add or remove), **withdrawing** an item is retrieving incorrect/different itemIDs
+  - *but depositing an item to the Bank is working as intended (retrieving the correct itemIDs)*
 
 ---
 
