@@ -7,7 +7,7 @@
 ## Install:
 
 - Opcode for **C_GET_WARE_ITEM** must be mapped for your region
-  - NA patch **93.3** = [protocol.367405.map](https://github.com/TerableMods/OP-codez)
+  - NA patch **97.3** = [protocol.372754.map](https://github.com/TerableMods/OP-codez)
 
 - The *.map* file containing your region specific opcodes, must be placed inside of:
 > TeraToolbox\data\opcodes
@@ -75,4 +75,4 @@
 
 ---
 
-Patch Version: **93.3**
+Patch Version: **97.3**
